@@ -1,0 +1,22 @@
+﻿<Page
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    x:Class="suduko.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:suduko"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Canvas x:Name="cnvsSuduko" Margin="598,132,597,228" Width="720" Height="720" />
+        <HyperlinkButton x:Name="btn" Content="New Game" Margin="67,135,0,0" VerticalAlignment="Top" Height="159" Width="458" FontSize="60" FontFamily="Algerian" Click="btnNewGame_Click"/>
+        <RadioButton x:Name="radioButtonEasy" Content="Easy" Margin="176,347,0,0" VerticalAlignment="Top" FontSize="60" FontFamily="Algerian" Checked="radioButtonEasy_Checked" IsChecked="True"/>
+        <RadioButton x:Name="radioButtonMedium" Content="Medium" Margin="176,504,0,0" VerticalAlignment="Top" FontSize="60" FontFamily="Algerian" Checked="radioButtonMedium_Checked"/>
+        <RadioButton x:Name="radioButtonHard" Content="Hard" Margin="176,679,0,0" VerticalAlignment="Top" FontSize="60" FontFamily="Algerian" Checked="radioButtonHard_Checked"/>
+        <HyperlinkButton x:Name="btn_Copy" Content="See a Solution" Margin="70,815,0,0" VerticalAlignment="Top" Height="159" Width="458" FontSize="60" FontFamily="Algerian" Click="btnSolution_Click"/>
+        <HyperlinkButton x:Name="btnCheckBoard" Content="I'm Done" Margin="1403,381,0,0" VerticalAlignment="Top" Height="159" Width="458" FontSize="60" FontFamily="Algerian" Click="btnCheckBoard_Click"/>
+
+    </Grid>
+</Page>
